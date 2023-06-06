@@ -1,0 +1,108 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     display: table;
+ }
+
+ .clearfix:after {
+     clear: both;
+ }
+
+ .clearfix {
+     *zoom: 1;
+ }
+
+ li {
+     list-style: none;
+ }
+
+ body {
+     height: 1000px;
+ }
+
+ .header {
+     width: 540px;
+     height: 60px;
+     /* background-color: pink; */
+     /* 注意此地方会层叠 w 里面的margin */
+     margin: 30px auto;
+ }
+
+ .logo {
+     float: left;
+     width: 42px;
+ }
+
+ .logo img {
+     width: 100%;
+ }
+
+ .nav {
+     float: left;
+     margin-left: 60px;
+ }
+
+ .nav ul li {
+     float: left;
+     margin: 0 15px;
+ }
+
+ .nav ul li a {
+     display: block;
+     height: 42px;
+     padding: 0 10px;
+     line-height: 42px;
+     font-size: 18px;
+     color: #050505;
+ }
+
+ .nav ul li a:hover {
+     border-bottom: 2px solid #00a4ff;
+     color: #00a4ff;
+ }
+
+
+
+ .login {
+     float: left;
+     margin-left: 60px;
+ }
+
+ .login button {
+     width: 90px;
+     height: 45px;
+     display: inline-block;
+     border: none;
+     background-color: #00a4ff;
+     color: white;
+ }
+
+
+
+ .lunbo {
+     width: 600px;
+     margin: 0 auto;
+     margin-top: 50px;
+ }
+
+ .cardbo {
+     width: 600px;
+     margin: 20px auto;
+ }
+
+ .cardbo .active {
+     float: left;
+ }
+
+ .activeone {
+     margin-right: 24px;
+ }

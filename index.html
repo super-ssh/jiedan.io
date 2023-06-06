@@ -36,6 +36,8 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -43,6 +45,12 @@
                     </div>
                     <div class="carousel-item">
                         <img src="img/火影2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/紫罗兰.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/蜘蛛侠.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
@@ -59,7 +67,7 @@
         </div>
     </div>
     <div class="cardbo">
-        <div class="card active activeone" style="width: 18rem;">
+        <div class="card active activeone" id="goto" style="width: 18rem;">
             <img src="img/海贼王2.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -67,8 +75,24 @@
                     content.</p>
             </div>
         </div>
-        <div class="card active" style="width: 18rem;">
+        <div class="card active" id="goto" style="width: 18rem;">
             <img src="img/火影2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+            </div>
+        </div>
+        <div class="card active activeone" id="goto" style="width: 18rem;">
+            <img src="img/蜘蛛侠.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+            </div>
+        </div>
+        <div class="card active" id="goto" style="width: 18rem;">
+            <img src="img/紫罗兰.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's
@@ -80,6 +104,19 @@
         var btn = document.querySelector('.loginto')
         btn.onclick = function () {
             window.location.href = 'login.html'
+        }
+        var div = document.querySelectorAll('#goto')
+        div[0].onclick = function () {
+            window.location.href = 'https://baike.baidu.com/item/%E8%88%AA%E6%B5%B7%E7%8E%8B/75861'
+        }
+        div[1].onclick = function () {
+            window.location.href = 'https://baike.baidu.com/item/%E7%81%AB%E5%BD%B1/6892?fromModule=lemma_search-box'
+        }
+        div[2].onclick = function () {
+            window.location.href = 'https://baike.baidu.com/item/%E8%9C%98%E8%9B%9B%E4%BE%A0%EF%BC%9A%E8%8B%B1%E9%9B%84%E6%97%A0%E5%BD%92/56733738?fromModule=lemma_search-box&fromtitle=%E8%9C%98%E8%9B%9B%E4%BE%A0&fromid=60597932'
+        }
+        div[3].onclick = function () {
+            window.location.href = 'https://baike.baidu.com/item/%E8%96%87%E5%B0%94%E8%8E%89%E7%89%B9%C2%B7%E4%BC%8A%E8%8A%99%E5%8A%A0%E7%99%BB/23426461'
         }
     </script>
 </body>

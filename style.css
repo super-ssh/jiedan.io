@@ -101,6 +101,11 @@
 
  .cardbo .active {
      float: left;
+     margin-bottom: 5px;
+ }
+
+ .cardbo .active:hover {
+     box-shadow: 0 0 0 5px rgba(0, 0, 0, .3);
  }
 
  .activeone {
